@@ -7,13 +7,13 @@
         "logo": "howly.png",
         "logoBgColor": "#FFFFFF",
         "description": "At Howly, Kafka is a key component of our event-driven architecture. We use Kafka to facilitate communication between microservices, which enables us to build a scalable and fault-tolerant system."
-    },	       
+    },
     {
         "link": "http://cloudscaleinc.com/",
         "logo": "cloud-scale.png",
         "logoBgColor": "#FFFFFF",
         "description": "Cloud Scale® Inc uses Kafka for building a real-time analytics system for our eventing, logging, and messaging services."
-    },	    
+    },
     {
         "link": "https://tech.dream11.in/blog/2020-01-07_Data-Highway---Dream11-s-Inhouse-Analytics-Platform---The-Burden-and-Benefits-90b8777d282",
         "logo": "dream11.jpg",
@@ -784,6 +784,11 @@
         "logo": "nussknacker.svg",
         "logoBgColor": "#ffffff",
         "description": "Nussknacker is a low-code tool that allows IT teams to hand over decision algorithms to non-technical users. Apache Kafka is Nussknacker's primary input and output interface in streaming use cases - Nussknacker reads events from Kafka, applies decision algorithms and outputs actions to Kafka."
+    }, {
+        "link": "https://www.rewixecommerce.com/",
+        "logo": "rewix.svg",
+        "logoBgColor": "#ffffff",
+        "description": "Rewix is a cutting-edge B2B eCommerce platform that leverages Apache Kafka to deliver real-time data processing and seamless integrations for businesses of all sizes. By utilizing Kafka's robust messaging system, Rewix ensures high performance, scalability, and reliability in managing product information, customer interactions, and transaction processing. Our platform empowers businesses to streamline their operations, enhance customer experiences, and drive growth through advanced analytics and automation."
     }];
 </script>
 
@@ -793,7 +798,7 @@
 	<!--#include virtual="includes/_nav.htm" -->
 	<div class="right">
         <h1 class="content-title">Powered By</h1>
-        
+
         <p>
             Apache Kafka is the most popular open-source stream-processing software for collecting, processing, storing, and analyzing data at scale. Most known for its excellent performance, low latency, fault tolerance, and high throughput, it's capable of handling thousands of messages per second. With over 1,000 Kafka use cases and counting, some common benefits are building data pipelines, leveraging real-time data streams, enabling operational metrics, and data integration across countless sources.
         </p>
@@ -832,7 +837,7 @@ $(function() { $('.b-nav__poweredby').addClass('selected'); });
         // enforce alphabetical sort by root domain for fairness
         poweredByItems.forEach(function getRootDomain(item) {
             /**
-             * 1. remove the protocol 
+             * 1. remove the protocol
              *    ex. https://subdomain.example.com/kafka-article/whatever.html => subdomain.example.com/kafka-article/whatever.html
              * 2. split the URL at the first occurrence of /, ?, or # and takes the first part
              *    ex. subdomain.example.com/kafka-article/whatever.html => subdomain.example.com
@@ -844,7 +849,7 @@ $(function() { $('.b-nav__poweredby').addClass('selected'); });
         poweredByItems.sort(function(a, b) {
                 return a.domain.localeCompare(b.domain);
         });
-        
+
         // loop through all Handlebar templates on the page and render them
         for(var i = 0; i < poweredByItems.length; i++) {
             var context = poweredByItems[i];
